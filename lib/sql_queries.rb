@@ -40,7 +40,7 @@ FROM pledges
 INNER JOIN users
 ON users.id = pledges.user_id
 GROUP BY(users.name)
-ORDER BY(pledges.amount,users.name)
+ORDER BY(pledges.amount,users.name);
 "
 end
 
