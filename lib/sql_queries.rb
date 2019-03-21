@@ -24,7 +24,7 @@ ON users.id = pledges.user_id GROUP BY(users.name) ORDER BY(users.name)"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-  binding.pry
+
   # projects.funding_goal = SUM(pledges.amount)
   # Expected: [["My book on SQL", 0], ["The next Inna-Gadda-Davida", 142]]
 "SELECT projects.title,  (projects.funding_goal - SUM(pledges.amount))
